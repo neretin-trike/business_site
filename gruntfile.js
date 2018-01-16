@@ -1,7 +1,7 @@
 module.exports = function(grunt){
     grunt.initConfig({
         sass: {
-            dist: {
+            scripts: {
                 files: [{
                 expand: true,
                 cwd: 'app/sass',
@@ -12,9 +12,6 @@ module.exports = function(grunt){
             }
         },
         watch: {
-            options: {
-                livereaload: true
-            },
             scripts: {
                 files: ['app/sass/*.scss'],
                 tasks: ['process']
@@ -23,13 +20,13 @@ module.exports = function(grunt){
         concat: {
             dist: {
                 src: ['app/css/*.css'],
-                dest: 'dist/css/all.css'
+                dest: 'app/css/style.css'
             }
         },
         cssmin: {
             dist: {
                 files: {
-                    'dist/css/all.min.css': ['dist/css/all.css']
+                    'dist/css/style.min.css': ['app/css/style.css']
                 }
             }
         } 
