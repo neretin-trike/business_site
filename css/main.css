@@ -1,0 +1,879 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins';
+    color: #222222;
+    font-size: 1.4rem;
+
+    position: relative;
+    /* max-width: 192.0rem; */
+    margin: 0 auto;
+}
+
+*{
+    box-sizing: border-box;
+    /* border: 0.1rem solid #a2a1bf; */
+}
+
+figure{
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2, h3{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+    font-family: 'Open Sans';
+}
+
+main{
+    margin-top: -13.5rem;
+}
+
+.container{
+    max-width: 117.0rem;
+    margin: 0 auto;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 3rem;
+}
+
+.row{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.column-direct{
+    flex-direction: column;
+}
+
+.overlay{
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.75) 1%, rgba(255,255, 255,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* background-color: #ed1f24; */
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+#hero{
+    position: relative;
+    
+    background-image: url(../images/hero_background.jpg);    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 75%;
+
+    padding-top: 36.0rem;
+    padding-bottom: 28.0rem;
+}
+
+/*--------------------------
+    GENERAL STYLE
+---------------------------*/
+
+button{
+    color: white;
+    font-weight: 700;
+
+    min-width: 14.5rem;    
+    text-align: left;
+}
+
+button:after{
+    content: "";
+    display: block;
+
+    margin-top: 1.5rem;
+
+    min-width: 14.5rem;    
+    height: 1rem;
+
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}    
+
+#testimonial header,
+#projects header,
+#service header{
+    grid-column: 5/9;
+    grid-row: 1/2;
+
+    text-align: center;
+}    
+
+#testimonial header h2,
+#projects header h2,
+#service header h2{
+
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}    
+
+#testimonial header p,
+#projects header p,
+#service header p{
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #999999;
+}   
+
+/*--------------------------
+    HEADER
+---------------------------*/
+
+body > header{
+    margin: 2.4rem 0;
+    position: relative;
+    z-index: 999;
+}
+
+header .logo{
+    grid-column: 1 /span 4;
+}    
+
+header .menu{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+
+    grid-column: 7 / span 6;
+
+    font-weight: 700;
+    text-align: right;
+}
+
+header .menu a{
+    color: white;
+}   
+
+header .menu a.selected{
+    color: #913bbe;
+}    
+
+/*--------------------------
+    HOME
+---------------------------*/
+
+#home{
+    position: relative;
+    
+    background-image: url(../images/home_background.jpg);    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding-top: 39.2rem;
+    padding-bottom: 32.6rem;
+}
+
+#home .column{
+    color: white;
+    grid-column: 1/8;
+
+    position: relative;
+    z-index: 1;
+}
+
+#home .column:after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    
+    left: -15rem;
+    top: -19.2rem;
+
+    width: 64.9rem;
+    height: 67.7rem;
+
+    background-image: url(../images/home_decoraction.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#home .column h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}    
+
+#home .column h1{
+    font-size: 6rem;
+    line-height: 7.2rem;
+}    
+
+#home .column p{
+    margin-top: 2.8rem;
+    margin-bottom: 5.2rem;
+
+
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}    
+
+/*--------------------------
+    ABOUT US
+---------------------------*/
+
+#about-us{
+    position: relative;
+
+    background-image: url(../images/about_background.jpg);
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+
+    padding-top: 20.5rem;
+    padding-bottom: 18.5rem;
+}
+
+#about-us .column{
+    grid-column: 8/13;
+
+}
+
+#about-us .column h2{
+    color: #913bbe;
+
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}    
+
+#about-us .column h1{
+    color: #222222;
+    
+    font-size: 4.8rem;
+    line-height: 6rem;
+}    
+
+#about-us .column p{
+    color: #444444;
+
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    margin-top: 2.6rem;
+    margin-bottom: 4.8rem;
+}  
+
+#about-us .column button{
+    color: #222222;
+}
+
+#about-us .column button:after{
+    background-position: center -2rem;
+}
+    
+/*--------------------------
+    FEATURES
+---------------------------*/
+
+#features{
+    border-top: 0.1rem solid #e5e5e5;
+
+    padding-top: 9.2rem;
+    padding-bottom: 9.8rem;
+}
+
+#features .column{
+    grid-column: 1/13;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+
+    text-align: center;
+}
+
+#features .column .feature-item .icon{
+    width: 8.0rem;
+    height: 5.8rem;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    background-image: url(../images/features/icon_bg.PNG);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+}    
+
+#features .column .feature-item img{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+}    
+
+#features .column .feature-item h3{
+    font-size: 2.4rem;
+    line-height: 6.0rem;
+    color: #222222;
+}
+
+#features .column .feature-item p{
+    line-height: 2.4rem;
+    color: #444444;
+}    
+
+/*--------------------------
+    FACTS
+---------------------------*/
+
+#facts{
+    background-color: #913bbe;
+    padding: 8.2rem 0;
+}
+
+#facts .column{
+    grid-column: 1/13;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3rem;
+
+    color: white;
+    font-weight: 700;
+}
+
+#facts .column .fact-item{
+    display: grid;
+    grid-auto-flow: column;
+
+}
+
+#facts .column .fact-item .count{
+    font-size: 6rem;
+    text-align: right;
+    padding-right: 2.2rem;
+
+    line-height:0;
+    position:relative;
+    top: 3.4rem;
+}    
+
+#facts .column .fact-item h3{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}    
+
+#facts .column .fact-item p{
+    font-size: 2.1rem;
+}    
+
+/*--------------------------
+    PROJECTS
+---------------------------*/
+
+#projects{
+    padding-top: 9.5rem;
+    padding-bottom: 9.5rem;
+
+    border-bottom: 0.1rem solid #e5e5e5;
+
+    position: relative;
+
+    background-image: url(../images/project_background.jpg);    
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 15% 50%;
+}
+
+#projects .container{
+    grid-row-gap: 0;
+    grid-template-rows: repeat(3, auto);
+}
+
+#projects article.content{
+    grid-column: 8/13;
+    grid-row: 2/3;
+
+    margin-top: 16.8rem;
+    margin-bottom: 14.6rem;
+}    
+
+#projects article.content h3{
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+}    
+
+#projects article.content p{
+    line-height: 2.4rem;
+    color: #444444;
+
+    margin: 4.4rem 0;
+}    
+
+#projects button{
+    color: #222222;
+}
+
+#projects button:after{
+    background-position: center -2rem;
+}
+
+#projects nav{
+    grid-column: 6/8;
+    grid-row: 3/4;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    align-items: flex-end;
+    margin: 0 auto;
+}    
+    
+#projects nav .item{
+    width: 0.5rem;
+    height: 4.2rem;
+    background-color: #dcdcdc;
+}    
+
+#projects nav .item.selected{
+    height: 6rem;
+    background-color: #913bbe;
+}    
+
+/*--------------------------
+    SERVICE
+---------------------------*/
+
+#service{
+    padding-top: 9.5rem;
+    padding-bottom: 9.5rem;
+}
+
+#service .container{
+    grid-row-gap: 0;
+    grid-template-rows: repeat(2, auto);
+}
+
+#service article.tile{
+    grid-column: 1/13;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: repeat(2,23.5rem);
+    grid-gap: 1rem;
+
+    margin-top: 9rem;
+
+    color: white;
+    font-weight: 700;
+}    
+
+#service article .item-1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}    
+
+#service article .item-1 p:first-child{
+    font-size: 3rem;
+}    
+
+#service article .item-1 p:last-child{
+    font-size: 4.8rem;
+}
+
+#service article .item-1 figcaption{
+    bottom: 5.2rem;
+    left: 5.2rem;
+}
+
+#service article .item-2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}    
+
+#service article .item-3{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}    
+
+#service article .item-4{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}    
+
+#service article figure p:first-child{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+#service article figure p:last-child{
+    font-size: 3rem;
+}
+
+#service article figcaption{
+    bottom: 2.5rem;
+    left: 2.5rem;
+}
+
+#service article figure{
+    position: relative;
+    height: 100%;
+}    
+
+#service article figure img,    
+#service article figure figcaption{
+    position: absolute;
+}    
+
+
+#service article figure img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}    
+
+/*--------------------------
+    TESTIMONIAL
+---------------------------*/
+
+#testimonial{
+    padding-top: 8.6rem;
+
+    position: relative;
+    
+    background-image: url(../images/testimonial_background.jpg);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#testimonial .container{
+    grid-row-gap: 0;
+    grid-template-rows: repeat(2, auto);
+}
+
+#testimonial article.review{
+    grid-column: 1/13;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: 1fr 0.15fr 1.5fr;
+}    
+
+#testimonial article.review img{
+    grid-column: 1/2;
+
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}    
+
+#testimonial article.review blockquote{
+    grid-column: 3/4;
+
+    margin: 12.8rem 0;
+}    
+
+#testimonial article.review blockquote h3{
+    font-size: 3.6rem;
+    position: relative;
+}    
+
+#testimonial article.review blockquote h3:after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -1.75rem;
+    right: 13.5rem;
+
+    height: 4.2rem;
+    width: 4.2rem;
+
+    background-image: url(../images/quotations.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+}    
+
+#testimonial article.review blockquote .content{
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+    
+    font-style: italic;
+    color: #444444;
+
+    margin-top: 3.8rem;
+    margin-bottom: 4.4rem;
+}    
+
+#testimonial article.review blockquote cite{
+    font-size: 1.8rem;
+    font-style: normal;
+}    
+
+/*--------------------------
+    PARTNERS
+---------------------------*/
+
+#partners{
+    padding: 5rem 0;
+}
+
+#partners .container{
+    text-align: center;
+
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    grid-gap: 0;
+
+}
+
+#partners figure{
+    grid-column: span 2;
+
+    padding: 3rem 0;
+
+    border-right: 0.1rem solid #e5e5e5;
+    border-bottom: 0.1rem solid #e5e5e5;
+}
+
+#partners figure:nth-child(4),
+#partners figure:nth-child(7){
+    border-right: none;
+}
+
+#partners figure:nth-child(5){
+    grid-row: 2/3;
+    grid-column: 2 /span 2;
+}    
+
+#partners figure:nth-child(5),
+#partners figure:nth-child(6),
+#partners figure:nth-child(7){
+    border-bottom: none;
+    
+}    
+
+/*--------------------------
+    LATEST NEWS
+---------------------------*/
+#latest-news{
+    padding-top: 4rem;
+    padding-bottom: 12rem;
+}
+
+#latest-news .container{
+    grid-row-gap: 0;
+    grid-template-rows: repeat(2, auto);
+}
+
+#latest-news header{
+    grid-column: 5/9;
+    grid-row: 1/2;
+
+    text-align: center;
+}    
+
+#latest-news header h2{
+    font-size: 3rem;
+
+    margin-bottom: 2rem;
+}    
+
+#latest-news header p{
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #999999;
+}  
+
+#latest-news article.news{
+    grid-column: 1/13;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+
+    margin-top: 6.8rem;
+}   
+
+#latest-news article.news img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    margin-bottom: 1rem;
+}    
+
+#latest-news article.news figcaption h3{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}    
+
+#latest-news article.news figcaption p{
+    line-height: 1.75;
+
+    margin: 2rem 0;
+}    
+
+#latest-news article.news footer{
+    border-top: 0.1rem solid #e5e5e5;
+
+    padding-top: 2.5rem;
+}    
+
+#latest-news article.news footer time{
+    color: #999999;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+#latest-news article.news footer a{
+    float: right;
+}    
+
+/*--------------------------
+    FOOTER
+---------------------------*/
+
+body > footer{
+    padding-top: 28.6rem;
+    padding-bottom: 6rem;
+    
+    position: relative;
+    
+    background-image: url(../images/footer_background.png);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+footer .container{
+    grid-row-gap: 11.6rem;
+    grid-template-rows: repeat(2, auto);
+
+    align-items: flex-end;
+}
+
+footer .container .about{
+    grid-row: 1/2;
+    grid-column: 1/7;
+
+    padding-right: 4.5rem;
+}
+
+footer .container .about h3{
+    font-size: 2.4rem;
+    margin-bottom: 4.8rem;
+}    
+
+footer .container .about h3{
+    color: #444444;
+    line-height: 2.4rem;
+}    
+
+footer .container .subscribe{
+    grid-row: 1/2;
+    grid-column: 7/11;
+
+    position: relative;
+}
+
+
+footer .container .subscribe input[type="text"]{
+    padding: 1.6rem 0;
+    
+    width: 100%;
+    padding-right: 13rem;
+    background-color: transparent;
+
+    border-bottom: 0.1rem solid #999999;
+}    
+
+footer .container .subscribe input[type="submit"]{
+    padding: 1.2rem 2.4rem;
+    
+    top: 0.5rem;
+    right: 0;
+    position: absolute;
+
+    background-color: #913bbe;
+    color: white;
+    font-weight: 700;
+}    
+
+footer .container .social-media{
+    grid-row: 1/2;
+    grid-column: 11/13;
+
+    margin-left: auto;
+}
+
+footer .container .social-media a{
+    display: inline-block;
+    width: 3.5rem;
+    height: 3rem;
+    background-image: url(../images/social_mdeia.PNG);
+    background-repeat: no-repeat;
+}
+    
+footer .container .social-media .facebook{
+    background-position: 1rem center;
+}
+
+footer .container .social-media .twitter{
+    background-position: -2.4rem center;
+}
+
+footer .container .social-media .google{
+    background-position: -7rem center;
+}
+
+footer .container .social-media .linkedin{
+    background-position: -11.4rem center;
+}    
+
+
+footer .container .copyright{
+    grid-row: 2/3;
+    grid-column: 1/4;
+
+    font-family: "Open Sans";
+    color: #444444;
+}    
+
+footer .container .copyright strong{
+    font-family: "Poppins";
+    color: #222222;
+}
+    
+footer .container .menu{
+    grid-row: 2/3;
+    grid-column: 8/13;
+
+    display: grid;
+    grid-auto-flow: column;
+
+    text-align: right;
+}
+    
