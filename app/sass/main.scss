@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    font-family: 'Poppins';
+    // font-family: 'Time';
     color: #222222;
     font-size: 1.4rem;
 
@@ -14,7 +14,7 @@ body{
 
 *{
     box-sizing: border-box;
-    /* border: 0.1rem solid #a2a1bf; */
+    border: 0.1rem solid #a2a1bf; 
 }
 
 figure{
@@ -42,4 +42,61 @@ a{
 
 h1, h2, h3{
     margin: 0;
+}
+
+#home{
+    font-size: 2.4rem;
+}
+
+#home ul:nth-child(1){
+    font-family: 'Karla';
+}
+
+#home ul:nth-child(1) li:nth-child(1){
+    font-weight: $font-weight-regular;
+}
+
+#home ul:nth-child(1) li:nth-child(2){
+    font-weight: $font-weight-bold;
+}
+
+#home ul:nth-child(2){
+    font-family: 'Lora';
+}
+
+#home ul:nth-child(2) li:nth-child(1){
+    font-style: italic;
+    font-weight: $font-weight-regular;
+}
+
+#home ul:nth-child(3){
+    font-family: 'OpenSans';
+}
+
+#home ul:nth-child(3) li:nth-child(1){
+    font-weight: $font-weight-regular;
+}
+
+#home ul:nth-child(4){
+    font-family: 'Raleway';
+}
+
+#home ul:nth-child(4) li:nth-child(1){
+    font-weight: $font-weight-regular;
+}
+
+#home ul:nth-child(4) li:nth-child(2){
+    font-weight: $font-weight-medium;
+}
+
+#home ul:nth-child(4) li:nth-child(3){
+    font-weight: $font-weight-extrabold;
+}
+
+#home ul:nth-child(5){
+    font-family: 'RobotoSlab';
+}
+
+#home ul:nth-child(5) li:nth-child(1){
+    font-weight: $font-weight-regular;
 }

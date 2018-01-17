@@ -5,7 +5,7 @@ module.exports = function(grunt){
                 files: [{
                 expand: true,
                 cwd: 'app/sass',
-                src: ['*.scss'],
+                src: ['style.scss'],
                 dest: 'app/css',
                 ext: '.css'
                 }]
@@ -13,14 +13,8 @@ module.exports = function(grunt){
         },
         watch: {
             scripts: {
-                files: ['app/sass/*.scss'],
+                files: ['app/sass/*.scss','app/*.html'],
                 tasks: ['process']
-            }
-        },
-        concat: {
-            dist: {
-                src: ['app/css/*.css'],
-                dest: 'app/css/style.css'
             }
         },
         cssmin: {
@@ -34,10 +28,9 @@ module.exports = function(grunt){
 
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-newer');
 
-    grunt.registerTask('process', ['newer:sass', 'concat', 'cssmin']);
-    grunt.registerTask('default', ['sass', 'concat', 'cssmin', 'watch']);
+    grunt.registerTask('process', ['sass', 'cssmin']);
+    grunt.registerTask('default', ['sass','cssmin', 'watch']);
 }
