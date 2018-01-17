@@ -79,48 +79,12 @@ a {
   text-decoration: none;
   color: black; }
 
-h1, h2, h3 {
+h1, h2, h3, p {
   margin: 0; }
 
-#home {
-  font-size: 2.4rem; }
+.row {
+  max-width: 1170px; }
 
-#home ul:nth-child(1) {
-  font-family: 'Karla'; }
-
-#home ul:nth-child(1) li:nth-child(1) {
-  font-weight: 400; }
-
-#home ul:nth-child(1) li:nth-child(2) {
-  font-weight: 700; }
-
-#home ul:nth-child(2) {
-  font-family: 'Lora'; }
-
-#home ul:nth-child(2) li:nth-child(1) {
-  font-style: italic;
-  font-weight: 400; }
-
-#home ul:nth-child(3) {
-  font-family: 'OpenSans'; }
-
-#home ul:nth-child(3) li:nth-child(1) {
-  font-weight: 400; }
-
-#home ul:nth-child(4) {
-  font-family: 'Raleway'; }
-
-#home ul:nth-child(4) li:nth-child(1) {
-  font-weight: 400; }
-
-#home ul:nth-child(4) li:nth-child(2) {
-  font-weight: 500; }
-
-#home ul:nth-child(4) li:nth-child(3) {
-  font-weight: 800; }
-
-#home ul:nth-child(5) {
-  font-family: 'RobotoSlab'; }
-
-#home ul:nth-child(5) li:nth-child(1) {
-  font-weight: 400; }
+header .menu {
+  display: flex;
+  justify-content: space-between; }
