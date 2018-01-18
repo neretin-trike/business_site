@@ -44,13 +44,13 @@ h1, h2, h3, p{
     margin: 0;
 }
 
-.row{
-    max-width: 1170px;
-}
-
 /*-------------------------------
 -------- GENERAL STYLES ---------
 -------------------------------*/
+
+.row{
+    max-width: 1170px;
+}
 
 button{
     padding: 1.5rem 3rem;
@@ -62,7 +62,7 @@ button{
 
     background-color: #f7941d;
 
-    border-radius: 0.35rem;
+    border-radius: $small-border-radius;
 
     &:hover{
         background-color: #29c2e1;
@@ -119,14 +119,8 @@ header{
 -------------------------------*/
 
 .home{
-    padding-top: 28rem;
-    padding-bottom: 3.2rem;
-
-    background-color: #8d8d8d;
+    @include base-markup-for-pages(28rem, 3.2rem, #8d8d8d);
     // background-image: url(../images/home_background.jpeg);
-    background-size: cover;
-
-    height: 100%;
 
     text-transform: uppercase;
     text-align: center;
@@ -150,7 +144,7 @@ header{
     }
 
     .subscribe{
-        border-radius: 0.35rem;
+        border-radius: $small-border-radius;
         background-color: rgba($color: #0d0e12, $alpha: 0.6);
         position: relative;
 
@@ -209,12 +203,14 @@ header{
             padding-right: 2.3rem;
 
             input[type="text"]{
-                border-radius: 0.3rem;
+                border-radius: $small-border-radius;
                 flex-grow: 2;
+
                 margin-right: 1rem;
+                padding-left: 2rem;
+                
 
                 &::placeholder{
-                    padding-left: 2rem;
 
                     text-transform: uppercase;
                     font-family: 'Karla';
