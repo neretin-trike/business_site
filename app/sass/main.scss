@@ -52,6 +52,36 @@ h1, h2, h3, p{
     max-width: 1170px;
 }
 
+.overlay{
+    background-color: #f7941d;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0.35;
+}
+
+.page-title{
+    font-family: 'Raleway';
+    text-align: center;
+    text-transform: uppercase;
+    
+    p{
+        display: inline-block;
+        background-color: #f7941d;
+        padding:0 0.5rem; 
+
+        font-size: 1.3rem;
+        color: #ffffff;
+        font-weight: $font-weight-medium;
+    }
+
+    h2{
+        font-size: 2.5rem;
+        color: #23282f;
+    }
+}
+
 button{
     padding: 1.5rem 3rem;
 
@@ -120,23 +150,28 @@ header{
 
 .home{
     @include base-markup-for-pages(28rem, 3.2rem, #8d8d8d);
-    // background-image: url(../images/home_background.jpeg);
+    background-image: url(../images/home_background.jpeg);
 
     text-transform: uppercase;
     text-align: center;
     font-family: 'Raleway';
     color: #ffffff;
 
-    p{
-        font-size: 2.4rem;
+    .slogan{
+        position: relative;
+
+        p{
+            font-size: 2.4rem;
+        }
+    
+        h1{
+            font-size: 6rem;
+            font-weight: $font-weight-extrabold;
+    
+            line-height: 2;
+        }
     }
 
-    h1{
-        font-size: 6rem;
-        font-weight: $font-weight-extrabold;
-
-        line-height: 2;
-    }
 
     &__button{
         margin-top: 2.2rem;
@@ -208,7 +243,6 @@ header{
 
                 margin-right: 1rem;
                 padding-left: 2rem;
-                
 
                 &::placeholder{
 
@@ -223,5 +257,55 @@ header{
                 flex-grow: 0.3;
             }
         }
+    }
+}
+
+/*-------------------------------
+---------- ABOUT US -------------
+-------------------------------*/
+
+.about-us{
+    @include base-markup-for-pages(10rem, 10rem);
+
+    .page-title{
+        padding-bottom: 4.5rem;
+    }
+
+    .photo{
+        background-image: linear-gradient(to left, #e5eef0, #e5eef0); 
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 96% 80%;
+
+    }
+
+    .img-wrap{
+
+        margin: 0 auto;
+        width: 47.5rem;
+        height: 30.8rem;
+
+        overflow: hidden;
+
+        img{
+            max-width: 100%;
+        }
+    }
+
+    article{
+        padding-top: 3.5rem;
+        padding-left: 4.5rem;
+        padding-right: 2rem;
+
+        .content{
+            padding-bottom: 4.5rem;
+            
+            font-family: 'OpenSans';
+            color: #55595f;
+            line-height: 2.4rem;
+        }
+
+
+
     }
 }

@@ -88,6 +88,29 @@ h1, h2, h3, p {
 .row {
   max-width: 1170px; }
 
+.overlay {
+  background-color: #f7941d;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 0.35; }
+
+.page-title {
+  font-family: 'Raleway';
+  text-align: center;
+  text-transform: uppercase; }
+  .page-title p {
+    display: inline-block;
+    background-color: #f7941d;
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+    color: #ffffff;
+    font-weight: 500; }
+  .page-title h2 {
+    font-size: 2.5rem;
+    color: #23282f; }
+
 button {
   padding: 1.5rem 3rem;
   color: #ffffff;
@@ -134,16 +157,21 @@ header {
   padding-bottom: 3.2rem;
   background-color: #8d8d8d;
   background-size: cover;
+  position: relative;
+  height: 100%;
+  background-image: url(../images/home_background.jpeg);
   text-transform: uppercase;
   text-align: center;
   font-family: 'Raleway';
   color: #ffffff; }
-  .home p {
-    font-size: 2.4rem; }
-  .home h1 {
-    font-size: 6rem;
-    font-weight: 800;
-    line-height: 2; }
+  .home .slogan {
+    position: relative; }
+    .home .slogan p {
+      font-size: 2.4rem; }
+    .home .slogan h1 {
+      font-size: 6rem;
+      font-weight: 800;
+      line-height: 2; }
   .home__button {
     margin-top: 2.2rem;
     margin-bottom: 18rem; }
@@ -204,3 +232,37 @@ header {
           color: #55595f; }
       .home .subscribe .form button {
         flex-grow: 0.3; }
+
+/*-------------------------------
+---------- ABOUT US -------------
+-------------------------------*/
+.about-us {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #fff;
+  background-size: cover;
+  position: relative;
+  height: 100%; }
+  .about-us .page-title {
+    padding-bottom: 4.5rem; }
+  .about-us .photo {
+    background-image: linear-gradient(to left, #e5eef0, #e5eef0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 96% 80%; }
+  .about-us .img-wrap {
+    margin: 0 auto;
+    width: 47.5rem;
+    height: 30.8rem;
+    overflow: hidden; }
+    .about-us .img-wrap img {
+      max-width: 100%; }
+  .about-us article {
+    padding-top: 3.5rem;
+    padding-left: 4.5rem;
+    padding-right: 2rem; }
+    .about-us article .content {
+      padding-bottom: 4.5rem;
+      font-family: 'OpenSans';
+      color: #55595f;
+      line-height: 2.4rem; }
