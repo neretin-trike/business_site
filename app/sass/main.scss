@@ -378,3 +378,120 @@ header{
 
     }
 }
+
+/*-------------------------------
+---------- CLIENTS --------------
+-------------------------------*/
+
+.clients{
+    @include base-markup-for-pages(10rem, 10.5rem, #f7941d);
+        
+    .page-title{
+        padding-bottom: 1.5rem;
+
+        p{
+            background-color: #23282f;
+        }
+    }
+
+    .quote{
+        margin: 0 auto;
+
+        width: 4.8rem;
+        height: 4.8rem;
+        border-radius: 2.4rem;
+
+        border: 0.2rem solid #ffffff;
+
+        background: url(../images/quote_white.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    blockquote{
+        margin: 0;
+        padding: 1.5rem 6rem;
+
+        text-align: center;
+        font-family: 'Lora';
+        font-size: 1.5rem;
+        line-height: 2.8rem;
+
+        color: #23282f;
+
+        position: relative;
+
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            width: 1.7rem;
+            height: 1.7rem;
+
+            background-image: url(../images/quote_open.png);
+            background-repeat: no-repeat;
+        }
+
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            width: 1.7rem;
+            height: 1.7rem;
+
+            background-image: url(../images/quote_close.png);
+            background-repeat: no-repeat;
+        }
+    }
+
+    cite{
+        display: block;
+        padding: 2rem 0;
+
+        font-style: normal;
+        font-family: 'Karla';
+        font-weight: $font-weight-bold;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        span{
+            display: block;
+            font-weight: $font-weight-regular;
+        }
+    }
+
+
+    .other-clients{
+        padding: 0;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: center;
+        margin-bottom: -1rem;
+    }
+
+    .photo{
+        padding: 0;
+        width: 5.5rem;
+        height: 6.3rem;
+        margin: 0 0.4rem;
+
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+        img{
+            max-width: 150%;
+            margin-left: -17%;
+            margin-top: -10%;
+        }
+    }
+
+}
+

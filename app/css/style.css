@@ -311,3 +311,83 @@ header {
       font-family: 'Raleway';
       font-size: 2rem;
       font-weight: 500; }
+
+/*-------------------------------
+---------- CLIENTS --------------
+-------------------------------*/
+.clients {
+  padding-top: 10rem;
+  padding-bottom: 10.5rem;
+  background-color: #f7941d;
+  background-size: cover;
+  position: relative;
+  height: 100%; }
+  .clients .page-title {
+    padding-bottom: 1.5rem; }
+    .clients .page-title p {
+      background-color: #23282f; }
+  .clients .quote {
+    margin: 0 auto;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 2.4rem;
+    border: 0.2rem solid #ffffff;
+    background: url(../images/quote_white.png);
+    background-repeat: no-repeat;
+    background-position: center; }
+  .clients blockquote {
+    margin: 0;
+    padding: 1.5rem 6rem;
+    text-align: center;
+    font-family: 'Lora';
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    color: #23282f;
+    position: relative; }
+    .clients blockquote:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1.7rem;
+      height: 1.7rem;
+      background-image: url(../images/quote_open.png);
+      background-repeat: no-repeat; }
+    .clients blockquote:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 1.7rem;
+      height: 1.7rem;
+      background-image: url(../images/quote_close.png);
+      background-repeat: no-repeat; }
+  .clients cite {
+    display: block;
+    padding: 2rem 0;
+    font-style: normal;
+    font-family: 'Karla';
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase; }
+    .clients cite span {
+      display: block;
+      font-weight: 400; }
+  .clients .other-clients {
+    padding: 0; }
+  .clients .flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1rem; }
+  .clients .photo {
+    padding: 0;
+    width: 5.5rem;
+    height: 6.3rem;
+    margin: 0 0.4rem;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+    .clients .photo img {
+      max-width: 150%;
+      margin-left: -17%;
+      margin-top: -10%; }
