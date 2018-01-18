@@ -266,3 +266,48 @@ header {
       font-family: 'OpenSans';
       color: #55595f;
       line-height: 2.4rem; }
+
+/*-------------------------------
+---------- SERVCES --------------
+-------------------------------*/
+.services {
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+  background-color: #e5eef0;
+  background-size: cover;
+  position: relative;
+  height: 100%; }
+  .services .page-title {
+    padding-bottom: 4.5rem; }
+  .services .icon {
+    width: 6.8rem;
+    height: 6.8rem;
+    border: 0.1rem solid #23282f;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .services .icon.selected {
+      background-color: #29c2e1;
+      border-color: #29c2e1; }
+    .services .icon.data-entry {
+      background-image: url(../images/services/data_entry.png); }
+    .services .icon.client-management {
+      background-image: url(../images/services/client_management.png); }
+    .services .icon.better-communication {
+      background-image: url(../images/services/better_communication.png); }
+    .services .icon.well-analyzing {
+      background-image: url(../images/services/well_analyzing.png); }
+    .services .icon.hour-support {
+      background-image: url(../images/services/hour_support.png); }
+    .services .icon.keeping-data {
+      background-image: url(../images/services/keeping_data.png); }
+  .services .item {
+    font-family: 'OpenSans';
+    color: #55595f;
+    line-height: 2.4rem;
+    padding-bottom: 5rem; }
+    .services .item p {
+      padding-bottom: 0.5rem;
+      color: #23282f;
+      font-family: 'Raleway';
+      font-size: 2rem;
+      font-weight: 500; }

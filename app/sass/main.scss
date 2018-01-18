@@ -309,3 +309,72 @@ header{
 
     }
 }
+
+/*-------------------------------
+---------- SERVCES --------------
+-------------------------------*/
+
+.services{
+    @include base-markup-for-pages(10rem, 4rem, #e5eef0);
+
+    .page-title{
+        padding-bottom: 4.5rem;
+    }
+    
+    .icon{
+        width: 6.8rem;
+        height: 6.8rem;
+
+        border: 0.1rem solid #23282f;
+
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &.selected{
+            background-color: #29c2e1;
+            border-color: #29c2e1;
+        }
+
+        &.data-entry{
+            background-image: url(../images/services/data_entry.png);
+        }
+        
+        &.client-management{
+            background-image: url(../images/services/client_management.png);
+        }
+        
+        &.better-communication{
+            background-image: url(../images/services/better_communication.png);
+        }
+        
+        &.well-analyzing{
+            background-image: url(../images/services/well_analyzing.png);
+        }
+        
+        &.hour-support{
+            background-image: url(../images/services/hour_support.png);
+        }
+        
+        &.keeping-data{
+            background-image: url(../images/services/keeping_data.png);
+        }
+    }
+
+    .item{
+        font-family: 'OpenSans';
+        color: #55595f;
+        line-height: 2.4rem;
+
+        padding-bottom: 5rem;
+
+        p{
+            padding-bottom: 0.5rem;
+
+            color: #23282f;
+            font-family: 'Raleway';
+            font-size: 2rem;
+            font-weight: $font-weight-medium;
+        }
+
+    }
+}
