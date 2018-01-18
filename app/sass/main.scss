@@ -48,11 +48,48 @@ h1, h2, h3, p{
     max-width: 1170px;
 }
 
+/*-------------------------------
+------------ HEADER -------------
+-------------------------------*/
+
 header{
-    // display: flex;
+    font-family: "Karla";
+    
+   .top-bar{
+        padding: 1.2rem 0;
+
+        background-color: #1f2629;
+
+        text-align: right;
+        font-size: 1.6rem;
+        color: #bac7cd;
+
+        .phone{
+            color: #7b8990;
+        }
+   }
+    
+   .navigate{
+        padding: 2.4rem 0;
+   }
+
+   .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 3.5rem;
+
+        text-transform: uppercase;
+        font-size: 1.45rem;
+
+        a{
+            color: #93a1a7;
+
+            &.selected{
+                color: #23282f;
+            }
+        }
+   }
 }
 
-header .menu{
-    display: flex;
-    justify-content: space-between;
-}

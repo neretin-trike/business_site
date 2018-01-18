@@ -85,6 +85,29 @@ h1, h2, h3, p {
 .row {
   max-width: 1170px; }
 
-header .menu {
-  display: flex;
-  justify-content: space-between; }
+/*-------------------------------
+------------ HEADER -------------
+-------------------------------*/
+header {
+  font-family: "Karla"; }
+  header .top-bar {
+    padding: 1.2rem 0;
+    background-color: #1f2629;
+    text-align: right;
+    font-size: 1.6rem;
+    color: #bac7cd; }
+    header .top-bar .phone {
+      color: #7b8990; }
+  header .navigate {
+    padding: 2.4rem 0; }
+  header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    text-transform: uppercase;
+    font-size: 1.45rem; }
+    header .menu a {
+      color: #93a1a7; }
+      header .menu a.selected {
+        color: #23282f; }
