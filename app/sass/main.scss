@@ -519,8 +519,8 @@ header{
         border: 0.1rem solid #e6edee;
 
         &.recommend{
-            box-shadow: 3px 4px 250px 0px rgba(228, 233, 237, 0.75); 
-            z-index: 10;
+            box-shadow: 0.3rem 0.4rem 25rem 0 rgba(228, 233, 237, 0.75); 
+            z-index: 11;
 
             &:before{
                 content: '';
@@ -601,4 +601,94 @@ header{
         }
     }
 
+}
+
+/*-------------------------------
+------------- TEAM --------------
+-------------------------------*/
+
+.team{
+    @include base-markup-for-pages(10rem, 10rem, #e5eef0);
+    
+    .page-title{
+        padding-bottom: 7rem;
+    } 
+
+    .team-card{
+        position: relative;
+        z-index: 12;
+
+        background-color: #ffffff;
+
+        &:hover{
+            box-shadow: 0.3rem 0.4rem 6.5rem 0 rgba(204, 222, 226, 0.75); 
+            z-index: 11;
+
+            background-color: #29c2e1;
+
+            p{
+                color: #23282f;
+            }
+
+            .social-media{
+
+                a{
+                    background-image: url(../images/social_media_white.png);
+                }
+            }
+        }
+
+        .caption{
+            padding: 2.6rem;
+            padding-bottom: 3.2rem;
+
+            font-family: 'Karla';
+        }
+
+        h3{
+            font-weight: $font-weight-regular;
+            text-transform: uppercase;
+            color: #23282f;
+        }
+
+        p{
+            color: #f7941d;
+        }
+
+        .photo{
+            height: 27.6rem;
+
+            overflow: hidden;
+
+            img{
+                max-width: 110%;
+            }
+        }
+
+        .social-media{
+            padding-top: 1.2rem;
+
+            a{
+                display: inline-block;
+                height: 2rem;
+                width: 2rem;
+
+                background-repeat: no-repeat;
+                background-image: url(../images/social_media_gray.png);
+
+                &.facebook{
+                    background-position: 0.5rem 0;
+                }
+                
+                &.twitter{
+                    background-position: -1.7rem 0;
+                }
+
+                &.google{
+                    background-position: -4.5rem 0;
+                }
+            }
+        }
+
+    }
 }

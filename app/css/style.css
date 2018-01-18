@@ -413,8 +413,8 @@ header {
     text-align: center;
     border: 0.1rem solid #e6edee; }
     .pricing .price-card.recommend {
-      box-shadow: 3px 4px 250px 0px rgba(228, 233, 237, 0.75);
-      z-index: 10; }
+      box-shadow: 0.3rem 0.4rem 25rem 0 rgba(228, 233, 237, 0.75);
+      z-index: 11; }
       .pricing .price-card.recommend:before {
         content: '';
         display: block;
@@ -463,3 +463,57 @@ header {
     margin-top: -2.5rem; }
     .pricing button.recommend {
       background-color: #29c2e1; }
+
+/*-------------------------------
+------------- TEAM --------------
+-------------------------------*/
+.team {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #e5eef0;
+  background-size: cover;
+  position: relative;
+  height: 100%; }
+  .team .page-title {
+    padding-bottom: 7rem; }
+  .team .team-card {
+    position: relative;
+    z-index: 12;
+    background-color: #ffffff; }
+    .team .team-card:hover {
+      box-shadow: 0.3rem 0.4rem 6.5rem 0 rgba(204, 222, 226, 0.75);
+      z-index: 11;
+      background-color: #29c2e1; }
+      .team .team-card:hover p {
+        color: #23282f; }
+      .team .team-card:hover .social-media a {
+        background-image: url(../images/social_media_white.png); }
+    .team .team-card .caption {
+      padding: 2.6rem;
+      padding-bottom: 3.2rem;
+      font-family: 'Karla'; }
+    .team .team-card h3 {
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #23282f; }
+    .team .team-card p {
+      color: #f7941d; }
+    .team .team-card .photo {
+      height: 27.6rem;
+      overflow: hidden; }
+      .team .team-card .photo img {
+        max-width: 110%; }
+    .team .team-card .social-media {
+      padding-top: 1.2rem; }
+      .team .team-card .social-media a {
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+        background-repeat: no-repeat;
+        background-image: url(../images/social_media_gray.png); }
+        .team .team-card .social-media a.facebook {
+          background-position: 0.5rem 0; }
+        .team .team-card .social-media a.twitter {
+          background-position: -1.7rem 0; }
+        .team .team-card .social-media a.google {
+          background-position: -4.5rem 0; }
