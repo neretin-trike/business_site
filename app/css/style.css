@@ -555,12 +555,12 @@ header {
       .blog .post-image .date .month {
         text-transform: uppercase;
         font-weight: 500; }
-  .blog header {
+  .blog .header {
     padding-top: 3.6rem;
     padding-bottom: 3rem;
     display: flex;
     align-items: center; }
-    .blog header h3 {
+    .blog .header h3 {
       margin-right: auto;
       font-family: 'Raleway';
       font-size: 2rem;
@@ -568,7 +568,7 @@ header {
       color: #23282f;
       padding-bottom: 1rem;
       position: relative; }
-      .blog header h3:after {
+      .blog .header h3:after {
         content: '';
         display: block;
         position: absolute;
@@ -576,17 +576,17 @@ header {
         height: 0.1rem;
         width: 3.8rem;
         background-color: #f7941d; }
-    .blog header .info {
+    .blog .header .info {
       font-family: 'Karla';
       text-transform: uppercase;
       color: #59686c; }
-      .blog header .info a {
+      .blog .header .info a {
         padding-left: 2.5rem;
         background-position: 10% center;
         background-repeat: no-repeat; }
-        .blog header .info a.author {
+        .blog .header .info a.author {
           background-image: url(../images/blog/admin.png); }
-        .blog header .info a.comment {
+        .blog .header .info a.comment {
           background-image: url(../images/blog/comment.png); }
   .blog .text {
     font-family: 'OpenSans';
